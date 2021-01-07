@@ -4,19 +4,16 @@ document.getElementById('mybtn').addEventListener('click', ageguess)
 // Event Listener connects the button with the function "ageguess()"
 
 function ageguess () {
-  const guess = (document.getElementById('guess').value)
-  // gets guess from html document
-  let x = 14
-  while (x = 14) {
-    if (guess = 14) {
+  let age = 14
+  let guess = 0
+  while (guess != age) {
+    guess=parseInt(prompt("Guess my age"));
+    if (guess == age) {
       alert('correct')
-      break;
-    } else if (guess < 14) {
+    } else if (guess < age) {
       alert('too young, try again!')
-      break;
-    } else if (guess > 14) {
+    } else if (guess > age) {
       alert('too old, try again!')
-      break;
     }
   }
 }
