@@ -4,14 +4,14 @@ document.getElementById('mybtn').addEventListener('click', ageguess)
 // Event Listener connects the button with the function "ageguess()"
 
 function ageguess () {
-  let age = 14
+  const age = 14
   // assigns a variable to age
   let guess = 0
   // assigns a variable to guess
-  while (guess != age) {
-    guess=parseInt(prompt("Guess my age"));
+  while (guess !== age) {
+    guess = parseInt(prompt('Guess my age'))
     // opens a prompt
-    if (guess == age) {
+    if (guess === age) {
       alert('correct')
       // opens an alert
     } else if (guess < age) {
