@@ -9,11 +9,11 @@ function ageguess () {
   let x = 14
   while (x = 14) {
     if (x = 14) {
-        alert('correct') 
+      alert('correct')
     } else if (x < 14) {
-       alert('too young, try again!') 
+      alert('too young, try again!')
     } else if (x > 14) {
-      alert('too old, try again!') 
+      alert('too old, try again!')
     }
   }
 }
